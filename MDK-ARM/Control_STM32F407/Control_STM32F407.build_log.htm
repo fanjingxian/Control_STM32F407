@@ -1,0 +1,75 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.41.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 13253376279@163.com, 2, LIC=HN0AE-5JXNE-12XLE-5MYGU-FQ86V-88016
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.41.0.0
+Toolchain Path:  E:\Keil_MDK\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.41.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      Segger\JL2CM3.dll V2.99.45.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+E:\1-stm32\Control_STM32F407\MDK-ARM\Control_STM32F407.uvprojx
+Project File Date:  04/26/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'E:\Keil_MDK\ARM\ARMCC\Bin'
+Build target 'Control_STM32F407'
+compiling Motor.c...
+..\BSP\Motor\Motor.c(151): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    rpm = 0.8 * rpm_lest + 0.2 * rpm;
+..\BSP\Motor\Motor.c(151): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    rpm = 0.8 * rpm_lest + 0.2 * rpm;
+..\BSP\Motor\Motor.c: 2 warnings, 0 errors
+compiling pid.c...
+..\BSP\PID\pid.c(30): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      if(output>0) {output+=53.9;}
+..\BSP\PID\pid.c(31): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		else if(output<0){output-=53.9;}
+..\BSP\PID\pid.c: 2 warnings, 0 errors
+compiling task1.c...
+..\APP\task1.c(108): warning:  #223-D: function "vsnprintf" declared implicitly
+  	len = vsnprintf((char *)UartTxBuf, sizeof(UartTxBuf), (char *)format, args);
+..\APP\task1.c: 1 warning, 0 errors
+linking...
+Program Size: Code=22622 RO-data=2146 RW-data=436 ZI-data=3916  
+FromELF: creating hex file...
+"Control_STM32F407\Control_STM32F407.axf" - 0 Error(s), 5 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.3.0.0.pack
+                Keil::STM32F4xx_DFP@3.0.0
+                STMicroelectronics STM32F4 Series Device Support
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Control_STM32F407
+  E:/Keil_MDK/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
